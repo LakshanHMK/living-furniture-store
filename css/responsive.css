@@ -1,0 +1,270 @@
+/* ==========================================================================
+   Luma Living — Responsive Stylesheet
+   ========================================================================== */
+
+/* Large Tablets & Small Laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .craftsmanship-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .craftsmanship-intro {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding-right: 0;
+    max-width: 600px;
+    margin: 0 auto 20px;
+  }
+
+  .why-choose-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .why-badge-card {
+    right: 20px;
+    top: 20px;
+  }
+
+  .interior-split-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .shop-products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .mobile-nav-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-primary-dark);
+    flex-direction: column;
+    padding: 32px 24px;
+    gap: 20px;
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.25);
+    transform: translateY(-120%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-smooth);
+    z-index: 999;
+  }
+
+  .nav-links.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .hero-section {
+    padding: 40px 0 70px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-content {
+    margin: 0 auto;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+  }
+
+  .hero-badge-float {
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%) !important;
+    animation: none;
+    width: max-content;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .interior-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .interior-stack {
+    flex-direction: row;
+  }
+
+  .picks-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .newsletter-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 36px 24px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .shop-controls-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .shop-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-bottom-links {
+    justify-content: center;
+  }
+
+  /* Cart & Checkout Responsive */
+  .cart-layout,
+  .checkout-layout,
+  .simple-card-grid,
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .form-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-table-card {
+    overflow-x: auto;
+  }
+}
+
+/* Mobile Small (max-width: 480px) */
+@media (max-width: 480px) {
+  .craftsmanship-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .interior-stack {
+    flex-direction: column;
+  }
+
+  .feature-check-list {
+    grid-template-columns: 1fr;
+  }
+
+  .category-filter-pills {
+    justify-content: center;
+  }
+
+  .shop-sort-wrap {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .shop-search-box {
+    width: 100%;
+  }
+
+  .shop-search-box input {
+    width: 100%;
+  }
+
+  .shop-sort-select {
+    width: 100%;
+  }
+
+  .toast-container {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .toast {
+    width: 100%;
+  }
+}
+
+/* Extra Small Mobile (max-width: 380px) */
+@media (max-width: 380px) {
+  :root {
+    --container-pad: 16px;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .cart-table th,
+  .cart-table td {
+    padding: 12px 8px;
+    font-size: 0.85rem;
+  }
+
+  .cart-item-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .qty-btn {
+    width: 26px;
+    height: 26px;
+  }
+
+  .qty-value {
+    width: 28px;
+    font-size: 0.85rem;
+  }
+
+  .checkout-form-card,
+  .cart-summary-card,
+  .modal-content {
+    padding: 20px 16px;
+  }
+}
