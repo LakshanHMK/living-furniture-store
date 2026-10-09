@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luma Living — Modern Scandinavian Furniture & Interior Studio</title>
+  <meta name="description" content="Discover handcrafted Scandinavian furniture and mindful interior design for modern homes. Crafted with sustainable materials and timeless elegance.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Site Header / Navigation
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo" aria-label="Luma Living Homepage">
+          Luma Living<span class="logo-dot"></span>
+        </a>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="mainNavLinks">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="shop.html" class="nav-link">Shop</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Navigation Actions (User & Cart) -->
+        <div class="nav-actions">
+          <a href="contact.html" class="nav-action-btn" aria-label="Account Profile" title="Account">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </a>
+
+          <a href="cart.html" class="nav-action-btn" aria-label="View Shopping Cart" title="Shopping Cart">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            <span class="cart-badge" style="display: none;">0</span>
+          </a>
+
+          <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <!-- ======================================================================
+         1. Hero Section
+         ====================================================================== -->
+    <section class="hero-section" aria-labelledby="heroTitle">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-tag">
+              <span class="dot"></span> Timeless Scandinavian Craft
+            </div>
+            <h1 class="hero-title" id="heroTitle">
+              Modern Interior Design <span>Studio</span>
+            </h1>
+            <p class="hero-lead">
+              Transform your sanctuary with consciously crafted furniture. Sustainable natural woods, rich textures, and architectural silhouettes tailored for peaceful everyday living.
+            </p>
+            <div class="hero-cta-group">
+              <a href="shop.html" class="btn btn-primary">
+                Shop Now
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#featuredCraft" class="btn btn-secondary">Explore Collection</a>
+            </div>
+          </div>
+
+          <div class="hero-visual-wrap">
+            <img src="assets/images/hero-sofa.jpg" alt="Luma Living Modern Scandinavian Lounge Sofa in natural light" class="hero-sofa-img" priority="high">
+            <div class="hero-badge-float">
+              <div class="badge-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div class="badge-text">
+                <strong>Certified Sustainable</strong>
+                <span>100% Solid European Oak</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         2. Craftsmanship Showcase (4-Column Layout)
+         ====================================================================== -->
+    <section class="craftsmanship-section" id="featuredCraft" aria-labelledby="craftTitle">
+      <div class="container">
+        <div class="craftsmanship-grid">
+          <!-- Col 1: Intro Text -->
+          <div class="craftsmanship-intro">
+            <span class="section-label">Curated Pieces</span>
+            <h2 id="craftTitle">Crafted with excellent material.</h2>
+            <p>
+              Each design is rigorously prototyped for ergonomic ease and lasting resilience, balancing architectural poise with inviting comfort.
+            </p>
+            <a href="shop.html" class="btn btn-dark">Explore All</a>
+          </div>
+
+          <!-- Col 2: Nordic Chair -->
+          <article class="product-card" data-id="1">
+            <div class="product-img-wrap">
+              <img src="assets/images/product-1.jpg" alt="Nordic Lounge Chair in solid oak" loading="lazy">
+            </div>
+            <span class="product-category-tag">Chairs</span>
+            <h3 class="product-title">Nordic Chair</h3>
+            <div class="product-price">
+              $180.00 <span class="original">$220.00</span>
+            </div>
+            <button class="product-add-btn" data-add-to-cart="1" aria-label="Add Nordic Chair to Cart" title="Add to Cart">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+          </article>
+
+          <!-- Col 3: Kruzo Aero Chair -->
+          <article class="product-card" data-id="2">
+            <div class="product-img-wrap">
+              <img src="assets/images/product-2.jpg" alt="Kruzo Aero Chair with plush seat" loading="lazy">
+            </div>
+            <span class="product-category-tag">Chairs</span>
+            <h3 class="product-title">Kruzo Aero Chair</h3>
+            <div class="product-price">
+              $240.00 <span class="original">$285.00</span>
+            </div>
+            <button class="product-add-btn" data-add-to-cart="2" aria-label="Add Kruzo Aero Chair to Cart" title="Add to Cart">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+          </article>
+
+          <!-- Col 4: Ergonomic Chair -->
+          <article class="product-card" data-id="3">
+            <div class="product-img-wrap">
+              <img src="assets/images/product-3.jpg" alt="Ergonomic Studio Stool with lumbar support" loading="lazy">
+            </div>
+            <span class="product-category-tag">Chairs</span>
+            <h3 class="product-title">Ergonomic Chair</h3>
+            <div class="product-price">
+              $145.00 <span class="original">$165.00</span>
+            </div>
+            <button class="product-add-btn" data-add-to-cart="3" aria-label="Add Ergonomic Chair to Cart" title="Add to Cart">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. Why Choose Us Section
+         ====================================================================== -->
+    <section class="why-choose-section" aria-labelledby="whyChooseTitle">
+      <div class="container">
+        <div class="why-choose-grid">
+          <div class="why-choose-content">
+            <span class="section-label">Customer Commitment</span>
+            <h2 class="section-title" id="whyChooseTitle">Why Choose Us</h2>
+            <p class="section-subtitle">
+              We eliminate friction from interior design. From transparent ethical sourcing to white-glove doorstep delivery, every touchpoint is intentionally refined.
+            </p>
+
+            <div class="benefits-grid">
+              <div class="benefit-card">
+                <div class="benefit-icon-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="1" y="3" width="15" height="13"></rect>
+                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                    <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                    <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                  </svg>
+                </div>
+                <div class="benefit-content">
+                  <h3>Fast & Free Shipping</h3>
+                  <p>Complimentary insured shipping on all orders over $150 with live carrier tracking.</p>
+                </div>
+              </div>
+
+              <div class="benefit-card">
+                <div class="benefit-icon-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                  </svg>
+                </div>
+                <div class="benefit-content">
+                  <h3>Easy to Shop</h3>
+                  <p>Intuitive curation, 3D spatial dimensions, and custom fabric swatches sent straight to your door.</p>
+                </div>
+              </div>
+
+              <div class="benefit-card">
+                <div class="benefit-icon-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="benefit-content">
+                  <h3>24/7 Dedicated Support</h3>
+                  <p>Direct assistance from licensed interior specialists available around the clock.</p>
+                </div>
+              </div>
+
+              <div class="benefit-card">
+                <div class="benefit-icon-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="1 4 1 10 7 10"></polyline>
+                    <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+                  </svg>
+                </div>
+                <div class="benefit-content">
+                  <h3>Hassle-Free Returns</h3>
+                  <p>Experience your furniture for 30 risk-free days with complimentary return pickups.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="why-choose-visual">
+            <img src="assets/images/why-choose-us.jpg" alt="Luma Living natural interior room styling" class="why-choose-img" loading="lazy">
+            <div class="why-badge-card">
+              <strong>15+</strong>
+              <span>Years of Timeless Excellence</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. Modern Interior Design Promotional Section
+         ====================================================================== -->
+    <section class="modern-interior-section" aria-labelledby="interiorPromoTitle">
+      <div class="container">
+        <div class="interior-split-grid">
+          <!-- Gallery Collage -->
+          <div class="interior-gallery-grid">
+            <img src="assets/images/interior-1.jpg" alt="Modern Scandinavian living lounge layout" class="interior-img-large" loading="lazy">
+            <div class="interior-stack">
+              <img src="assets/images/interior-2.jpg" alt="Minimalist armchair aesthetic detail" class="interior-img-sub" loading="lazy">
+              <img src="assets/images/interior-3.jpg" alt="Architectural dining and warm lighting" class="interior-img-sub" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Content Column -->
+          <div class="interior-promo-content">
+            <span class="section-label">Spatial Harmony</span>
+            <h2 class="section-title" id="interiorPromoTitle">We help you craft modern interior design.</h2>
+            <p class="section-subtitle">
+              Our in-house architects harmonize light, texture, and proportion. Every sofa, credenza, and dining chair is proportioned to give your room breathing room and visual warmth.
+            </p>
+
+            <div class="feature-check-list">
+              <div class="feature-check-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>FSC® Certified Solid Woods</span>
+              </div>
+              <div class="feature-check-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Zero Formaldehyde Finishes</span>
+              </div>
+              <div class="feature-check-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Precision Ergonomic Support</span>
+              </div>
+              <div class="feature-check-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>10-Year Frame Warranty</span>
+              </div>
+            </div>
+
+            <a href="about.html" class="btn btn-primary">Discover Our Philosophy</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. Popular Picks Trio
+         ====================================================================== -->
+    <section class="popular-picks-section" aria-labelledby="popularPicksTitle">
+      <div class="container">
+        <div style="text-align: center; max-width: 620px; margin: 0 auto;">
+          <span class="section-label">Most Cherished</span>
+          <h2 class="section-title" id="popularPicksTitle">Popular Picks This Season</h2>
+          <p class="section-subtitle" style="margin: 0 auto;">
+            Hand-selected by our senior design stylists for versatility, warmth, and enduring tactile quality.
+          </p>
+        </div>
+
+        <div class="picks-grid">
+          <div class="pick-card">
+            <img src="assets/images/product-1.jpg" alt="Nordic Chair" class="pick-img" loading="lazy">
+            <div class="pick-details">
+              <h4>Nordic Chair</h4>
+              <p>Minimalist silhouette sculpted from European white oak.</p>
+              <a href="shop.html" class="read-link">
+                Read More
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="pick-card">
+            <img src="assets/images/product-2.jpg" alt="Kruzo Aero Chair" class="pick-img" loading="lazy">
+            <div class="pick-details">
+              <h4>Kruzo Aero Chair</h4>
+              <p>Plush high-resilience foam wrapped in organic woven cotton.</p>
+              <a href="shop.html" class="read-link">
+                Read More
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="pick-card">
+            <img src="assets/images/product-3.jpg" alt="Ergonomic Studio Stool" class="pick-img" loading="lazy">
+            <div class="pick-details">
+              <h4>Ergonomic Chair</h4>
+              <p>Posture-correcting angle crafted for long creative focus hours.</p>
+              <a href="shop.html" class="read-link">
+                Read More
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. Customer Testimonials Section
+         ====================================================================== -->
+    <section class="testimonials-section" aria-labelledby="testimonialsTitle">
+      <div class="container">
+        <span class="section-label">Client Stories</span>
+        <h2 class="section-title" id="testimonialsTitle">Loved by Homeowners Worldwide</h2>
+        <p class="section-subtitle" style="margin: 0 auto;">
+          Real experiences from interior architects, designers, and mindful homeowners.
+        </p>
+
+        <div class="testimonial-slider-wrap">
+          <div class="testimonial-track">
+            <!-- Slide 1 -->
+            <div class="testimonial-card active">
+              <div class="stars-rating" aria-label="5 stars rating">
+                ★★★★★
+              </div>
+              <blockquote class="testimonial-quote">
+                “Luma Living’s Nordic sofa completely anchored our open-plan living room. The woodwork feels silky smooth to the touch, and the cushion density has held its shape impeccably over twelve months of constant family life.”
+              </blockquote>
+              <div class="testimonial-author">
+                <img src="assets/images/avatar-1.jpg" alt="Maria Jones portrait" class="author-avatar" loading="lazy">
+                <div class="author-info">
+                  <strong>Maria Jones</strong>
+                  <span>Architectural Stylist — Oslo, Norway</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-card">
+              <div class="stars-rating" aria-label="5 stars rating">
+                ★★★★★
+              </div>
+              <blockquote class="testimonial-quote">
+                “Finding authentic solid oak furniture without prohibitive retail markups was difficult until we discovered Luma Living. Delivery arrived right on time, flawlessly packaged with zero plastic waste.”
+              </blockquote>
+              <div class="testimonial-author">
+                <img src="assets/images/avatar-2.jpg" alt="David Chen portrait" class="author-avatar" loading="lazy">
+                <div class="author-info">
+                  <strong>David Chen</strong>
+                  <span>Interior Enthusiast — San Francisco, USA</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-card">
+              <div class="stars-rating" aria-label="5 stars rating">
+                ★★★★★
+              </div>
+              <blockquote class="testimonial-quote">
+                “The Kruzo Aero chairs added just the right amount of warm organic minimalism to our dining studio. The proportion, joinery, and tactile comfort exceed pieces that cost double the price.”
+              </blockquote>
+              <div class="testimonial-author">
+                <img src="assets/images/avatar-3.jpg" alt="Sophia Larsson portrait" class="author-avatar" loading="lazy">
+                <div class="author-info">
+                  <strong>Sophia Larsson</strong>
+                  <span>Design Director — Stockholm, Sweden</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-controls">
+            <button class="slider-arrow-btn" id="prevTestimonial" aria-label="Previous Testimonial">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M15 18l-6-6 6-6"/>
+              </svg>
+            </button>
+            <button class="slider-arrow-btn" id="nextTestimonial" aria-label="Next Testimonial">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M9 18l6-6-6-6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. Recent Blog Articles
+         ====================================================================== -->
+    <section class="blog-section" aria-labelledby="blogTitle">
+      <div class="container">
+        <div class="blog-header-row">
+          <div>
+            <span class="section-label">Design Journal</span>
+            <h2 class="section-title" id="blogTitle">Recent Blog Articles</h2>
+          </div>
+          <a href="blog.html" class="btn btn-outline-dark">View All Articles</a>
+        </div>
+
+        <div class="blog-grid">
+          <!-- Article 1 -->
+          <article class="blog-card">
+            <div class="blog-img-wrap">
+              <img src="assets/images/blog-1.jpg" alt="Modern room with natural lighting and furniture" loading="lazy">
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  5 min read
+                </span>
+                <span>• Kristin Watson</span>
+              </div>
+              <h3 class="blog-card-title">
+                <a href="blog.html">First Time Homeowner: Furnishing on Any Budget</a>
+              </h3>
+              <a href="blog.html" class="blog-card-link">
+                Read Article
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="blog-card">
+            <div class="blog-img-wrap">
+              <img src="assets/images/blog-2.jpg" alt="Close-up of wooden grains and interior decor" loading="lazy">
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  4 min read
+                </span>
+                <span>• Robert Fox</span>
+              </div>
+              <h3 class="blog-card-title">
+                <a href="blog.html">How to Clean and Condition Natural Hardwood Furniture</a>
+              </h3>
+              <a href="blog.html" class="blog-card-link">
+                Read Article
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="blog-card">
+            <div class="blog-img-wrap">
+              <img src="assets/images/blog-3.jpg" alt="Bright minimalist apartment space" loading="lazy">
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  6 min read
+                </span>
+                <span>• Elena Rostova</span>
+              </div>
+              <h3 class="blog-card-title">
+                <a href="blog.html">Small Space Solutions: Maximizing Apartment Flow</a>
+              </h3>
+              <a href="blog.html" class="blog-card-link">
+                Read Article
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         8. Newsletter Subscription Interface
+         ====================================================================== -->
+    <section class="newsletter-section" aria-labelledby="newsletterTitle">
+      <div class="container">
+        <div class="newsletter-card">
+          <div class="newsletter-info">
+            <h3 id="newsletterTitle">Subscribe to Our Design Notes</h3>
+            <p>
+              Receive seasonal interior lookbooks, sustainable living tips, and enjoy <strong>10% off your first purchase</strong>.
+            </p>
+          </div>
+          <form class="newsletter-form" aria-label="Newsletter Subscription Form">
+            <input type="email" class="newsletter-input" placeholder="Enter your email address" required aria-label="Email Address">
+            <button type="submit" class="btn btn-primary">
+              Subscribe
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       Multi-Column Footer
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" style="color: var(--color-primary-dark);">
+            Luma Living<span class="logo-dot"></span>
+          </a>
+          <p>
+            Thoughtfully crafted furniture made for a lifetime of stories. Mindful Scandinavian architecture and ethical woodcraft for contemporary homes.
+          </p>
+          <div class="social-links" aria-label="Social Media Channels">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="m8 12 4 4 4-4"></path><path d="M12 8v8"></path></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop Catalog</a></li>
+            <li><a href="about.html">About Our Studio</a></li>
+            <li><a href="services.html">Design Services</a></li>
+            <li><a href="blog.html">Journal & Articles</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Customer Care -->
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul class="footer-nav-list">
+            <li><a href="services.html">Shipping & Delivery</a></li>
+            <li><a href="services.html">30-Day Free Returns</a></li>
+            <li><a href="about.html">Sustainability Pledge</a></li>
+            <li><a href="contact.html">Track My Order</a></li>
+            <li><a href="contact.html">Support & FAQs</a></li>
+            <li><a href="contact.html">Book Design Consultation</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Collections -->
+        <div class="footer-col">
+          <h4>Collections</h4>
+          <ul class="footer-nav-list">
+            <li><a href="shop.html">Nordic Seating</a></li>
+            <li><a href="shop.html">Modular Sofas</a></li>
+            <li><a href="shop.html">Solid Oak Tables</a></li>
+            <li><a href="shop.html">Ceramic Lighting</a></li>
+            <li><a href="shop.html">Walnut Storage</a></li>
+            <li><a href="shop.html">New Arrivals</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2026</span> Luma Living Inc. All rights reserved. Designed with mindful craftsmanship.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
